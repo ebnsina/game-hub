@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+
 import useGenres from '../hooks/useGenres'
 
 interface Props {
@@ -6,7 +7,8 @@ interface Props {
 }
 
 function GenreList() {
-  const { genres } = useGenres()
+  const { data: genres } = useGenres()
+
   return (
     <ul>
       {genres.map((genre) => (
