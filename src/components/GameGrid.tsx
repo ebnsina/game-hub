@@ -22,7 +22,8 @@ function GameGrid({ gameQuery }: Props) {
         columns={{
           base: 1,
           md: 2,
-          lg: 4,
+          lg: 3,
+          xl: 4,
         }}
         spacing={3}
         marginRight={3}
