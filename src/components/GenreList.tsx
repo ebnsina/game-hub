@@ -12,11 +12,11 @@ import useGenres, { Genre } from '../hooks/useGenres'
 import getCroppedImageUrl from '../services/image-url'
 
 interface Props {
-  onSelectGenrer: (genre: Genre) => void
+  onSelectGenre: (genre: Genre) => void
   selectedGenre: Genre | null
 }
 
-function GenreList({ onSelectGenrer, selectedGenre }: Props) {
+function GenreList({ onSelectGenre: onSelectGenrer, selectedGenre }: Props) {
   const { data: genres, isLoading, error } = useGenres()
 
   if (error) return null
